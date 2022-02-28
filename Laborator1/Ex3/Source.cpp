@@ -40,10 +40,15 @@ int main()
 				{
 					Swap(strings[i], strings[j]);
 				}
-				else if(lenght1 == lenght2)
+				else if (lenght1 == lenght2)
 				{
 					bool afara = false;
 					for (int z = 0; strings[i][z] && afara == false;)
+					{
+						if(strings[i][z] >='A' && strings[i][z] <='Z')
+						tolower(strings[i][z]);
+						if(strings[j][z] >='A' && strings[j][z] <='Z')
+						tolower(strings[j][z]);
 						if (strings[i][z] == strings[j][z])
 							z++;
 						else if (strings[i][z] > strings[j][z] || strings[j][z] == NULL)
@@ -52,6 +57,7 @@ int main()
 							Swap(strings[i], strings[j]);
 						}
 						else afara = true;
+					}
 				}
 			}
 
