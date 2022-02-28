@@ -4,12 +4,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int Conversie(char s[])
+int Atoi(char s[])
 {
 	int nr = 0;
 	for (int i = 0; s[i+1]; ++i)
 		nr = nr*10 + (s[i] - '0');
-	//printf("%d%s", nr, " ");
 	return nr;
 }
 int main()
