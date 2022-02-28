@@ -7,8 +7,9 @@
 int Atoi(char s[])
 {
 	int nr = 0;
-	for (int i = 0; s[i+1]; ++i)
-		nr = nr*10 + (s[i] - '0');
+	for (int i = 0; s[i]; ++i)
+		if(s[i]>='0' && s[i] <= '9')
+			nr = nr*10 + (s[i] - '0');
 	return nr;
 }
 int main()
@@ -21,7 +22,7 @@ int main()
 	{
 		while (fgets(data, NRMAXCIFRE, f))
 		{
-			int nr = atoi(data);
+			int nr = Atoi(data);
 			sum += nr;
 		}
 	}
