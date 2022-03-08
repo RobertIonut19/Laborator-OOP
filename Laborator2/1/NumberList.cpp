@@ -9,8 +9,9 @@ bool NumberList::Add(int x) {
 	if (count >= 10)
 		return false;
 	else{
-	numbers[count] = x;
-	count++;
+		numbers[count] = x;
+		count++;
+		return true;
 	}
 }
 

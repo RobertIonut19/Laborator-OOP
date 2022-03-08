@@ -18,16 +18,6 @@ int main()
 	d.Add(5);
 	d.Sort();
 	d.Print();
-	printf("%s", "\n");
-
-	NumberList s;
-	s.Init();
-
-	s.Add(10);
-	s.Add(350);
-	s.Add(150);
-	s.Sort();
-	s.Print();
 
 	return 0;
 }
